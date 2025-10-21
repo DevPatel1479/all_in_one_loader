@@ -1,6 +1,6 @@
 name: all_in_one_loader
 description: "A fully customizable, all-in-one loader widget for Flutter with support for multiple loader types and custom animations."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/DevPatel1479/all_in_one_loader
 repository: https://github.com/DevPatel1479/all_in_one_loader
 

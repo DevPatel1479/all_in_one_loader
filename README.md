@@ -13,7 +13,7 @@ Add the package to your app pubspec.yaml dependencies:
 
 ```bash
 dependencies:
-  all_in_one_loader: ^0.0.1
+  all_in_one_loader: ^0.0.2
 ```
 Then fetch packages:
 
