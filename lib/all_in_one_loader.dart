@@ -13,12 +13,11 @@ import 'custom_loader.dart';
 import 'loaders/shimmer_type.dart';
 
 /// Typedef for custom loader builder
-typedef LoaderBuilder =
-    Widget Function(
-      BuildContext context,
-      AnimationController controller,
-      Animation<double> progress,
-    );
+typedef LoaderBuilder = Widget Function(
+  BuildContext context,
+  AnimationController controller,
+  Animation<double> progress,
+);
 
 /// Circular loader customization
 class CircularLoaderConfig {
@@ -149,7 +148,6 @@ class AllInOneLoader extends StatelessWidget {
           showPercentage: circularConfig?.showPercentage ?? false,
           backgroundColor: circularConfig?.backgroundColor,
           strokeCap: circularConfig?.strokeCap ?? StrokeCap.round,
-
           gradient: gradient,
         );
 
@@ -234,19 +232,18 @@ class AllInOneLoader extends StatelessWidget {
           color: color,
           duration: duration,
           loop: loop,
-          builder:
-              customBuilder ??
+          builder: customBuilder ??
               (context, controller, progress) => RotationTransition(
-                turns: progress,
-                child: Container(
-                  width: size,
-                  height: size,
-                  decoration: BoxDecoration(
-                    color: color ?? Colors.purple,
-                    borderRadius: BorderRadius.circular(size * 0.2),
+                    turns: progress,
+                    child: Container(
+                      width: size,
+                      height: size,
+                      decoration: BoxDecoration(
+                        color: color ?? Colors.purple,
+                        borderRadius: BorderRadius.circular(size * 0.2),
+                      ),
+                    ),
                   ),
-                ),
-              ),
         );
     }
   }

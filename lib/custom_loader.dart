@@ -5,7 +5,7 @@ class CustomLoader extends LoaderBase {
   /// The builder now provides both the [AnimationController]
   /// and a [progress] animation for complex usage.
   final Widget Function(BuildContext, AnimationController, Animation<double>)
-  builder;
+      builder;
 
   const CustomLoader({
     super.key,
